@@ -1,8 +1,8 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install srt-tools
-sudo apt-get install net-tools
+sudo apt-get install srt-tools -y
+sudo apt-get install net-tools -y
 sudo nano srtstream.sh
 sudo touch /usr/bin/srtstream.sh
 sudo cp srtstream.sh /usr/bin/srtstream.sh
