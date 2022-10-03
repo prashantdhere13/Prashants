@@ -1,6 +1,9 @@
-srt-live-transmit -s 5000 -f srt://125.18.225.108:33273 udp://239.1.4.30:1234?pkt_size=1316&mode=caller
+[Unit]
+Description=SRT stream service.
 
-while :
-do
-sleep 30;
-done
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/srtstream.sh
+
+[Install]
+WantedBy=multi-user.target
