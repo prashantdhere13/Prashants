@@ -1,9 +1,1 @@
-[Unit]
-Description=SRT stream service.
 
-[Service]
-Type=simple
-ExecStart=/bin/bash /usr/bin/srtstream.sh
-
-[Install]
-WantedBy=multi-user.target
